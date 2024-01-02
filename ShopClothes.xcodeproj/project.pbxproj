@@ -14,6 +14,10 @@
 		AEA3969A2B44725000CC80C0 /* ShopClothesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA396992B44725000CC80C0 /* ShopClothesTests.swift */; };
 		AEA396A42B44725000CC80C0 /* ShopClothesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA396A32B44725000CC80C0 /* ShopClothesUITests.swift */; };
 		AEA396A62B44725000CC80C0 /* ShopClothesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA396A52B44725000CC80C0 /* ShopClothesUITestsLaunchTests.swift */; };
+		AEA396B42B44780800CC80C0 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA396B32B44780800CC80C0 /* BrowseView.swift */; };
+		AEA396B72B44782B00CC80C0 /* ClothesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA396B62B44782B00CC80C0 /* ClothesData.swift */; };
+		AEA396BA2B44786F00CC80C0 /* ClothModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA396B92B44786F00CC80C0 /* ClothModel.swift */; };
+		AEA396BC2B447B2000CC80C0 /* ClothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA396BB2B447B2000CC80C0 /* ClothView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		AEA3969F2B44725000CC80C0 /* ShopClothesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopClothesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA396A32B44725000CC80C0 /* ShopClothesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopClothesUITests.swift; sourceTree = "<group>"; };
 		AEA396A52B44725000CC80C0 /* ShopClothesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopClothesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AEA396B32B44780800CC80C0 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		AEA396B62B44782B00CC80C0 /* ClothesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesData.swift; sourceTree = "<group>"; };
+		AEA396B92B44786F00CC80C0 /* ClothModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothModel.swift; sourceTree = "<group>"; };
+		AEA396BB2B447B2000CC80C0 /* ClothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,10 @@
 		AEA396872B44724E00CC80C0 /* ShopClothes */ = {
 			isa = PBXGroup;
 			children = (
+				AEA396B82B44786200CC80C0 /* Models */,
+				AEA396B52B44782100CC80C0 /* Data */,
+				AEA396B22B44726200CC80C0 /* Views */,
 				AEA396882B44724E00CC80C0 /* ShopClothesApp.swift */,
-				AEA3968A2B44724E00CC80C0 /* ContentView.swift */,
 				AEA3968C2B44724F00CC80C0 /* Assets.xcassets */,
 				AEA3968E2B44724F00CC80C0 /* Preview Content */,
 			);
@@ -125,6 +135,32 @@
 				AEA396A52B44725000CC80C0 /* ShopClothesUITestsLaunchTests.swift */,
 			);
 			path = ShopClothesUITests;
+			sourceTree = "<group>";
+		};
+		AEA396B22B44726200CC80C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEA3968A2B44724E00CC80C0 /* ContentView.swift */,
+				AEA396B32B44780800CC80C0 /* BrowseView.swift */,
+				AEA396BB2B447B2000CC80C0 /* ClothView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEA396B52B44782100CC80C0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AEA396B62B44782B00CC80C0 /* ClothesData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AEA396B82B44786200CC80C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEA396B92B44786F00CC80C0 /* ClothModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA396B72B44782B00CC80C0 /* ClothesData.swift in Sources */,
+				AEA396BC2B447B2000CC80C0 /* ClothView.swift in Sources */,
 				AEA3968B2B44724E00CC80C0 /* ContentView.swift in Sources */,
+				AEA396B42B44780800CC80C0 /* BrowseView.swift in Sources */,
+				AEA396BA2B44786F00CC80C0 /* ClothModel.swift in Sources */,
 				AEA396892B44724E00CC80C0 /* ShopClothesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +470,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +500,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
